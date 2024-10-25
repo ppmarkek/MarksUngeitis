@@ -16,12 +16,19 @@ header {
   padding: 24px 112px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    padding: 16px;
+  }
 }
 
 .headerLinks {
   display: flex;
   align-items: center;
   gap: 32px;
+
+  @media (max-width: 1160px) {
+    display: none;
+  }
 }
 
 .headerLinks a {
@@ -49,6 +56,9 @@ header {
   cursor: pointer;
   transition: all 0.3s;
   text-decoration: none;
+  @media (max-width: 520px) {
+    display: none;
+  }
 }
 
 .downloadButton:hover {
@@ -67,6 +77,9 @@ header {
 
 .aboutMeClass {
   padding: 0px 112px;
+  @media (max-width: 900px) {
+    padding: 0px 16px;
+  }
 }
 
 .aboutMeClass_maintext_title {
@@ -74,16 +87,16 @@ header {
 }
 
 .small-text {
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 500;
   line-height: 40px;
   margin: 0;
 }
 
 .large-text {
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 45px;
   margin: 0;
 }
 
@@ -103,16 +116,25 @@ header {
 
 .aboutMeClass {
   display: flex;
-  justify-content: space-between;
+  gap: inherit;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .aboutMeClass img {
-  width: 45%;
+  width: 50%;
   height: auto;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .aboutMeClass_maintext {
-  width: 45%;
+  width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .aboutMeClass_maintext_text {
@@ -169,6 +191,9 @@ header {
   flex-direction: column;
   gap: 60px;
   padding: 0px 112px;
+  @media (max-width: 900px) {
+    padding: 0px 16px;
+  }
 }
 
 .mySkillsClass_title {
@@ -181,6 +206,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: inherit;
+  justify-content: center;
 }
 
 .mySkillsClass_box {
@@ -207,6 +233,9 @@ header {
   gap: 60px;
   color: #fff;
   flex-direction: column;
+  @media (max-width: 900px) {
+    padding: 40px 16px;
+  }
 }
 
 .experienceClass_title {
@@ -222,7 +251,6 @@ header {
 }
 
 .experienceClass_box {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -235,10 +263,17 @@ header {
   display: flex;
   padding: 0px 112px;
   gap: inherit;
+  @media (max-width: 900px) {
+    padding: 0px 16px;
+    flex-direction: column;
+  }
 }
 
 .aboutMeSectionClass img {
   width: 570px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .aboutMeSectionClass_alltext {
@@ -255,6 +290,9 @@ header {
   gap: 60px;
   color: #fff;
   flex-direction: column;
+  @media (max-width: 900px) {
+    padding: 40px 16px;
+  }
 }
 
 .myProjectsClass_title {
@@ -267,12 +305,24 @@ header {
   display: flex;
   gap: inherit;
   align-items: center;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+#BetaCall {
+  @media (max-width: 900px) {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .myProjectsClass_box img {
   width: 50%;
   height: fit-content;
   border-radius: 18px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .myProjectsClass_box_text {
@@ -297,6 +347,9 @@ header {
   padding: 0px 112px 80px;
   flex-direction: column;
   gap: 60px;
+  @media (max-width: 900px) {
+    padding: 0px 16px 40px;
+  }
 }
 
 .myRecommendationsClass_title {
@@ -308,10 +361,13 @@ header {
 .myRecommendationsClass_box {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
   border-radius: 20px;
-  width: 100%;
   padding: 40px;
   display: flex;
   gap: inherit;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .myRecommendationsClass_box img {
@@ -325,6 +381,9 @@ header {
   align-items: center;
   gap: 20px;
   width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .myRecommendationsClass_box_profile_text {
@@ -337,9 +396,52 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .myRecommendationsClass_box_recommendations_date {
   color: #71717a;
   font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .highlight-small {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .aboutMeClass_maintext_title h3 {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .aboutMeClass_maintext_title .large-text {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .aboutMeClass_maintext_title .outline-text {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .aboutMeClass_maintext_title .highlight {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 40px;
+  }
 }
