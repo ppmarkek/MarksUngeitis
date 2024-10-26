@@ -316,6 +316,12 @@ header {
   }
 }
 
+#Artograd {
+  @media (max-width: 900px) {
+    flex-direction: column-reverse !important;
+  }
+}
+
 .myProjectsClass_box img {
   width: 50%;
   height: fit-content;
